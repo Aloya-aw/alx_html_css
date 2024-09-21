@@ -1,0 +1,1 @@
+This is a school project where I get to test out the HTML and CSS I've learned so far.
