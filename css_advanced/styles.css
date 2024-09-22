@@ -1,0 +1,116 @@
+body {
+    background-image: url("./images/background.png");
+    width: 1440px;
+    height: 1093px;
+    flex-shrink: 0;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-section nav {
+    display: flex;
+    align-items: center;
+}  
+.hero-section nav img {
+    height: 40px;
+    margin-left: 172px;
+    margin-right: 697px;
+}  
+.hero-section nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}  
+.hero-section nav li a {
+    margin-right: 52px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro';
+    font-size: 12px;
+    font-weight: 700;
+}
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 151px;
+    margin-bottom: 0;
+}
+span {
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 700;
+}
+#smiles {
+    margin-left: 593px;
+    margin-right: 59px;
+}
+#grin {
+    margin-right: 57px;
+}
+#hero-button {
+    display:block;
+    box-sizing: border-box;
+    width: 162px;
+    height: 44px;
+    background-color: #C271FF;
+    color: white;
+    border-radius: 22px;
+    border: none;
+    box-shadow: 0px, 2px, 20px, 0px, rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro';
+    margin-top: 38px;
+    margin-left: 643.08px;
+}
+.first-word {
+    color:#C271FF;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Source Sans Pro';
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 168px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    column-gap: 139px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 87.15px;
+    gap: 139px;
+    font-family: 'Source Sans Pro'
+}
+.item1 > img, .item2 > img, .item3 > img, .item4 > img {
+    margin-bottom: 10px;
+}
+.item1 > h3, .item2 > h3, .item3 > h3, .item4 > h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.item1 > p, .item2 > p, .item3 > p, .item4 > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 98px;
+}
+#quote {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 1100px;
+    height: 321px;
+}
