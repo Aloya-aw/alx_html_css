@@ -6,10 +6,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 .hero-section nav {
     display: flex;
     align-items: center;
+    margin-top: 37px;
 }  
 .hero-section nav img {
     height: 40px;
@@ -108,9 +111,12 @@ h2 {
     margin-bottom: 98px;
 }
 #quote {
+    box-sizing: border-box;
+    background-color: #C271FF;
     display: grid;
     grid-template-columns: auto auto;
     position: absolute;
     top: 1100px;
     height: 321px;
+    width: 100%;
 }
