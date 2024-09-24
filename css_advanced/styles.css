@@ -78,7 +78,7 @@ span {
     font-size: 32px;
     font-family: 'Source Sans Pro';
 }
-h2 {
+.hero-section > div > h2 {
     font-size: 32px;
     text-align: center;
     padding-top: 168px;
@@ -156,4 +156,68 @@ blockquote {
     font-size: 22px;
     font-family: 'Source Sans Pro';
     font-style: italic;
+}
+#videos {
+    box-sizing: border-box;
+    border-style: dashed;
+    position: absolute;
+    top: 1485px;
+    height: 624px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#item1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top: 87px;
+    padding-left: 588px;
+    font-size: 32px;
+    font-weight: 300;
+}
+#item1 > span {
+    color:#C271FF;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 76px;
+}
+#item2 > img, h3, p {
+    padding-left: 177px;
+    width: 254px;
+}
+#item2a > img, h4 {
+    display: inline;
+}
+#item2a > img {
+    width: 30px;
+    padding-left: 177px;
+}
+#item2a > 
+#item3 > img, h3, p {
+    padding-left: 31px;
+    width: 254px;
+}
+#item4 > img, h3, p {
+    padding-left: 31px;
+    width: 254px;
+}
+#item5 > img, h3, p {
+    padding-left: 31px;
+    width: 254px;
+}
+#membership {
+    box-sizing: border-box;
+    border-style:dashed;
+    position: absolute;
+    top: 2109px;
+    height: 502px;
+}
+#FAQ {
+    box-sizing: border-box;
+    border-style:dashed;
+    position: absolute;
+    top: 2611px;
+    height: 858px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
