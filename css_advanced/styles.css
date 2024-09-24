@@ -1,6 +1,6 @@
 body {
     background-image: url("./images/background.png");
-    width: 1440px;
+    width: 100%;
     height: 1093px;
     flex-shrink: 0;    
     background-repeat: no-repeat;
@@ -193,11 +193,14 @@ blockquote {
     padding-left: 177px;
 }
 #item2a > 
-#item3 > img, h3, p {
+#item3 > img {
     padding-left: 31px;
     width: 254px;
 }
-#item4 > img, h3, p {
+#item3 > h3, p {
+    width: 254px;
+}
+#item4 > img {
     padding-left: 31px;
     width: 254px;
 }
