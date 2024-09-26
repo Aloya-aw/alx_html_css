@@ -157,3 +157,32 @@ textarea:not([rows]) {
 .bg-primary-300 {
     background-color: var(--clr-primary-300);
 }
+
+/* background styling */
+body {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.logo {
+    width: 10.0625rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+nav {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+@media (min-width: 479px) {
+    .checkbtn {
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .checkbtn { display: block;
+        order: 1;
+        margin-right: 20px; }
+}
