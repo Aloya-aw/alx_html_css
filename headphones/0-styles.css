@@ -17,11 +17,11 @@
     --fw-semi-bold: 600;
     --fw-regular: 400;
 
-    --fs-300: 0.75rem;
-    --fs-400: 0.875rem;
-    --fs-500: 1rem;
-    --fs-600: 2rem;
-    --fs-700: 2.875rem;
+    --fs-300: 12px;
+    --fs-400: 14px;
+    --fs-500: 16px;
+    --fs-600: 32px;
+    --fs-700: 46px;
 
     --fs-nav: var(--fs-300);
     --fs-heading: var(--fs-600);
@@ -51,7 +51,6 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 * {
     margin: 0 auto;
-    padding: 0;
     font: inherit;
 }
 
@@ -66,14 +65,14 @@ html, body {
     height: 100%;
 }
 body {
-  line-height: 1.5;
+  line-height: normal;
   justify-content: center;
 }
 
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
 button, input, label {
-  line-height: 1.1;
+  line-height: normal;
 }
 
 /* Balance text wrapping on headings */
@@ -162,7 +161,7 @@ textarea:not([rows]) {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 0;
     border: 1px solid red;
 }
 
@@ -212,11 +211,11 @@ textarea:not([rows]) {
 /* body styling */
 
 body {
-    background-image: url(./images/headphones_hero_1.jpg);
-    background-size: cover;
+    background-image: url(./images/background.png);
+    background-size: 1440px 800px;
     background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1000px;
+    background-attachment: local;
+    max-width: 1000px; 
 }
 .header {
     position: relative;
@@ -224,13 +223,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.31rem;
+    padding-top: 37px;
     transition: 0.3s;
 }
 .logo img {
     display: block;
-    width: 10.0625rem;
-    height: 2rem;
+    width: 161px;
+    height: 32px;
     flex-shrink: 0;
 }
 .navigation {
@@ -243,8 +242,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 0.9375rem;
-    gap: 2.5625rem;
+    height: 15px;
+    gap: 41px;
     z-index: 1;
     transition: 0.5s;
 }
@@ -324,17 +323,39 @@ li a:active {
 /* Desktop View */
 /*Hero section */
 #hero {
-    margin-top: 19.51rem;
-    width: 39.8125rem;
-    height: 19.5625rem;
+    margin-top: 312.24px;
+    width: 637px;
+    height: 313px;
     justify-content: center;
     flex-shrink: 0;
 }
-#hero > .col-12 > h1 {    
+.hero-heading > .col-12 > h1 {    
     text-align: center;
     font-family: "Source Sans Pro";
-    font-size: 2rem;    
     line-height: normal;
+}
+.tagline > .col-12 > p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero-button > .col-12 > button {
+    display: block;
+    width: 162px;
+    height: 44px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 22px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    line-height: normal;
+    flex-shrink: 0;
+    margin: auto;
+}
+.hero-text > .col-12 > p {
+    margin-top: 65px;
+    text-align: center;
+    width: 637px;
+    margin-bottom: 130px;
 }
 /* Mobile View */
 
@@ -346,7 +367,7 @@ li a:active {
         background-image: url(./images/background-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-size: 375px 869px;
         background-color: var(--clr-neutral-100);
     }
     .hamburger, .toggle-menu {
@@ -366,4 +387,29 @@ li a:active {
         height: 100%;
         padding-top: 100px;
     }
+    #hero {
+        margin-top: 266px;
+        width: 357px;
+        height: 463px;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    .tagline > .col-12 > p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hero-text > .col-12 > p {
+        margin-top: 65px;
+        text-align: center;
+        width: 335px;
+        margin-bottom: 106px;
+    }
+}    
+
+/* creating the pentagon shape */
+.pentagon {
+    width: 11.25rem;
+    height: 10.75rem;
+    background-color: var(--clr-primary-300);
+    clip-path: polygon(50% 0, 0 50%, 25% 100%, 75% 100%, 100% 50%);
 }
