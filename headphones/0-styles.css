@@ -162,7 +162,6 @@ textarea:not([rows]) {
 [class*="col-"] {
     float: left;
     padding: 0;
-    border: 1px solid red;
 }
 
 /* For mobile phones: */
