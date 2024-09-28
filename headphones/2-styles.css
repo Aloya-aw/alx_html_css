@@ -479,7 +479,8 @@ li a:active {
         margin-bottom: 106px;
     }
     #results {
-        background-image: url(./images/hero-2\ mobile.png);
+        background-image:url(./images/hero-2\ mobile.png);
+        background-size: cover;
         height: 1491px;
     }
 }    
