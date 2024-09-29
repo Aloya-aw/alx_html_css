@@ -504,3 +504,58 @@ li a:active {
     padding-top: 45px;
     padding-bottom:20px;
 }
+
+/* Contact Us Section */
+.contacthead {
+    margin-top: 110px;
+    margin-bottom: 56px;
+}
+#name, #email {
+    border : none;
+    border-bottom: solid rgba(7, 22, 41, 0.1745) 1px;
+    width: 335px;
+    margin-bottom: 45px;
+    padding-bottom: 11px;
+}
+#message {
+    border : none;
+    border-bottom: solid rgba(7, 22, 41, 0.1745) 1px;
+    width: 335px;
+    margin-bottom: 56px;
+    padding-bottom: 11px;
+}
+::placeholder {
+    font-family: 'Source Sans Pro';
+    font-size: var(--fs-label);
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-primary-400);
+}
+#name:focus, #email:focus, #message:focus {
+    border : none;
+    border-bottom: solid var(--clr-primary-400) 1px;
+    outline: none;
+}
+#name:focus, #email:focus, #message:focus {
+    animation-duration: 0.3s;
+    animation-name: zoomin;
+  }
+  
+  @keyframes zoomin {
+    from {
+      translate: 10vh;
+      scale: 5% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.formbutton {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 130px;
+}
