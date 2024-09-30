@@ -20,6 +20,7 @@
     --fs-300: 12px;
     --fs-400: 14px;
     --fs-500: 16px;
+    --fs-550: 18px;
     --fs-600: 32px;
     --fs-700: 46px;
 
@@ -31,6 +32,7 @@
     --fs-hexagon: var(--fs-400);
     --fs-label: var(--fs-400);
     --fs-copyright: var(--fs-300);
+    --fs-desctitle: var(--fs-550);
 
 
 }
@@ -173,6 +175,9 @@
 }
 .fs-copyright {
     font-size: var(--fs-label);
+}
+.fs-desctitle {
+    font-size: var(--fs-desctitle);
 }
 
 .bg-primary-400 {
@@ -671,4 +676,7 @@ footer {
         margin-left: 0;
         padding-right: 0;
     }
+}
+.whatanim {
+    margin-bottom: 13px;
 }
