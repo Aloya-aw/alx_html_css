@@ -187,7 +187,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
-    border: solid red 1px;
+    /*border: solid red 1px;*/
 }
 
 /* For mobile phones: */
@@ -564,12 +564,16 @@ li a:active {
 footer {
     background-color: var(--clr-primary-400);
 }
+.copyright > p {
+    color: rgba(255, 255, 255, 0.3517)
+}
 
 
 /*Desktop View*/
 @media screen and (min-width:768px) {
     .logo_socials {
         padding-top: 91.76px;
+        margin-bottom: 67px;
     }
     .social_icons {
         display: flex;
@@ -578,6 +582,9 @@ footer {
         width: 130px;
         margin: auto;
         flex-shrink: 0;
+        padding-left: 0;
+        margin-right: 39px;
+        margin-left: 56px;
     }
     .facebook {
         margin-right: 20px;
@@ -589,7 +596,7 @@ footer {
     }
     .insta {
         margin-left: 0;
-        padding-right: 16px;
+        padding-right: 0;
     }
     .footer-logo {
         width: 162px;
@@ -599,13 +606,18 @@ footer {
 @media screen and (max-width: 768px) {
     .logo_socials {
         padding-top: 109px;
+        margin-bottom: 58px;
     }
     .social_icons {
         display: flex;
         flex-flow: row;
+        float: right;
         width: 130px;
-        height: 30px;
+        margin: auto;
+        flex-shrink: 0;
         padding-left: 0;
+        margin-right: 39px;
+        margin-left: 56px;
     }
     .facebook {
         margin-right: 20px;
@@ -617,7 +629,7 @@ footer {
     }
     .insta {
         margin-left: 0;
-        padding-left: 0;
+        padding-right: 0;
     }
     .footer-logo {
         width: 162px;
@@ -643,6 +655,9 @@ footer {
         padding-left: 0;
         width: 100%;
         height: 30px;
+        margin-right: 0;
+        margin-bottom: 42px;
+        margin-left: 0;
     }
     .facebook {
         margin-right: 20px;
@@ -654,5 +669,6 @@ footer {
     }
     .insta {
         margin-left: 0;
+        padding-right: 0;
     }
 }
